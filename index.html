@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/scripts.js"></script>
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+      <link href="css/styles.css" rel="stylesheet" type="text/css">
+      <title>Dating</title>
+  </head>
+    <body>
+      <h1>Dating Website</h1>
+      <div class="container">
+        <form id="dateform" class="form-group">
+          <label for="name">Your Name:</label>
+          <input id="name" class="form-control" type="text">
+
+
+          <label id="sex">Sex</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sex" value="male" checked>
+              Male
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sex" value="female">
+              Female
+            </label>
+          </div>
+
+          <label id="lookFor">Looking For</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="lookFor" value="male" checked>
+              Male
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="lookFor" value="female">
+              Female
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="lookFor" value="monkey">
+              I prefer not human
+            </label>
+          </div>
+
+          <label id="money">Do you want to date with someone who is rich?</label>
+          <div class="radio">
+            <input type="radio" name="money" value="rich" checked>
+            Yes, Of course!!
+          </div>
+          <div class="radio">
+            <input type="radio" name="money" value="notRich">
+            No, all I need is love.
+          </div>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <div id="result">
+          <div class="panel">
+            <div class="panel-heading">
+              <h4>Congratulation <span class="userName"></span>, you are Matched!!</h4>
+            </div>
+          <div class="panel-body">
+            <!--Case: Looking for Male with money -->
+            <div class="male rich">
+              <h4>Your dating partner for tonight is Donald Trump! </h4>
+              <img src="http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg" alt="Donald Trump">
+              <p>He is rich, and future president of the United States. Although he might want to have fun with Russian girl, he still wants to date with you. So why not!? We reccomend don't make any record for future risk.</p>
+            </div>
+            <div class="male notRich">
+              <h4>Your dating partner for tonight is Leo!</h4>
+              <img src="http://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=5035072" alt="Leo">
+              <p>Altough you don't care about moneym he is rich, very talented actor. And he is still single. And he wants to meet you!! Enjoy your date!!
+              </p>
+            </div>
+            <div class="female rich">
+              <h4>Your dating partner for tonight is Sarah!</h4>
+              <img src="https://static.mediaequalizer.com/files/uploads/2015/03/Palin-Sarah-2.jpg" alt="Palin">
+              <p>Well, I'm not sure she is actually rich. But she used to be a model, and the mayer of Alaska. She said, you can see Russia from Alaska! What a romantic statement!! Sooo Enjoy your date!!
+              </p>
+            </div>
+            <div class="female notRich">
+              <h4>Your dating partner for tonight is Lidley!</h4>
+              <img src="http://vignette4.wikia.nocookie.net/starwars/images/e/e6/DaisyRidley.jpg/revision/latest?cb=20140501210629" alt="Daisy Lidley">
+              <p>How many times you've wathced Star Wars EP7? Although I thought Rogue One was better than EP7, I really loved the character of EP7. I hope you are too!
+              </p>
+            </div>
+            <div class="monkey">
+              <h4>Your dating partner for tonight is George!</h4>
+              <img src="http://uploads.neatorama.com/images/posts/247/77/77247/1415114935-0.jpg" alt="Monkey">
+              <p>George is fluffy, strong. He is the strongest of his tribes and every girls admire him. He is interested to see you!! Maybe he wants to get feeded, but I'm not sure.</p>
+            </div>
+          </div> <!--End of panel-body -->
+        </div> <!--End of result -->
+      </div> <!--End of Container -->
+    </body>
+</html>
